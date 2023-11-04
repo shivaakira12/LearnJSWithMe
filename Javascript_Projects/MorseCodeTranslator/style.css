@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 65.5%;
+}
+body{
+
+    background-color: #fff;
+}
+.container h1{
+   text-align: center;
+   color: #1f2d54;
+   margin: 150px;
+   font-weight: bolder;
+}
+.second-container{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.5rem;
+    background-color: #f7f8fc;
+}
+.father-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.father-container h5{
+    font-size: 1.5rem;
+  
+    text-align: center;
+}
+textarea{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    outline: none;
+}
+button{
+    cursor: pointer;
+    background-color:  #4b5dff;
+    color: #ffff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+}
+.copy-button{
+    float: right;
+}
+@media (min-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .father-container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        gap: 60px;
+    }
+ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */
+    .father-container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .father-container{
+        display: flex;
+       justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
